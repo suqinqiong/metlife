@@ -8,14 +8,14 @@ $(function(){
         tooltip: {},
         legend: {
 
-            data: ['第一标准', '第二标准','第三标准'],
+            data: ['第一标准', '第二标准','第三标准','第四标准'],
             x:"center",
             y:'bottom',
             textStyle:{
                 color:"#fff"
             }
         },
-        color: ['#4c95d9', '#f6731b', '#8cd43f'],
+        color: ['#4c95d9', '#f6731b', '#8cd43f', '#f6ff1b'],
         radar: {
             name:{
                 textStyle: {
@@ -65,6 +65,10 @@ $(function(){
                 {
                     value : [6000, 14000, 18000, 21000, 32000, 11000],
                     name : '第三标准'
+                },
+                {
+                    value : [2400, 14000, 18000, 21000, 32000, 11000],
+                    name : '第四标准'
                 }
             ]
         }]

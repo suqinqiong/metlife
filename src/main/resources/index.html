@@ -53,8 +53,8 @@
     湖南
     <a href="javascript:;" class="a-access">
         <button class="button type1">
-    		刷新
-    	</button>
+            刷新
+        </button>
     </a>
 </div>
 <!--主体-->
@@ -110,6 +110,26 @@
                     </li>
                 </ul>
             </div>
+            <script type="text/javascript">
+                new Vue({
+                    el: '#app',
+                    data() {
+                        return {
+                            info: null
+                        }
+                    },
+                    mounted() {
+                        axios
+                            .get('https://www.runoob.com/try/ajax/json_demo.json')
+                            .then(response => (this.info = response.data.sites))
+                            .catch(function (error) { // 请求失败处理
+                                console.log(error);
+                            });
+                    }
+                })
+            </script>
+
+
             <span class="top-left border-span"></span>
             <span class="top-right border-span"></span>
             <span class="bottom-left border-span"></span>
@@ -138,110 +158,110 @@
     <div class="main-right">
         <div class="border-container">
             <div class="name-title">列表</div>
-           <table class="table table-kingdargen">
-               <thead>
-                   <tr>
-                       <th>test1</th>
-                       <th>test2</th>
-                       <th>test3</th>
-                       <th>test4</th>
-                       <th>test5</th>
-                   </tr>
-               </thead>
-               <tbody>
-                   <tr>
-                       <td>a</td>
-                       <td>268</td>
-                       <td>212</td>
-                       <td>342</td>
-                       <td>256</td>
-                   </tr>
-                   <tr>
-                       <td>b</td>
-                       <td>268</td>
-                       <td>212</td>
-                       <td>342</td>
-                       <td>256</td>
-                   </tr>
-                   <tr>
-                       <td>c</td>
-                       <td>268</td>
-                       <td>212</td>
-                       <td>342</td>
-                       <td>256</td>
-                   </tr>
-                   <tr>
-                       <td>d</td>
-                       <td>268</td>
-                       <td>212</td>
-                       <td>342</td>
-                       <td>256</td>
-                   </tr>
-                   <tr>
-                       <td>e</td>
-                       <td>268</td>
-                       <td>212</td>
-                       <td>342</td>
-                       <td>256</td>
-                   </tr>
-                   <tr>
-                       <td>f</td>
-                       <td>268</td>
-                       <td>212</td>
-                       <td>342</td>
-                       <td>256</td>
-                   </tr>
-                   <tr>
-                       <td>g</td>
-                       <td>268</td>
-                       <td>212</td>
-                       <td>342</td>
-                       <td>256</td>
-                   </tr>
-                   <tr>
-                       <td>h</td>
-                       <td>268</td>
-                       <td>212</td>
-                       <td>342</td>
-                       <td>256</td>
-                   </tr>
-                   <tr>
-                       <td>i</td>
-                       <td>268</td>
-                       <td>212</td>
-                       <td>342</td>
-                       <td>256</td>
-                   </tr>
-                   <tr>
-                       <td>k</td>
-                       <td>268</td>
-                       <td>212</td>
-                       <td>342</td>
-                       <td>256</td>
-                   </tr>
-                   <tr>
-                       <td>k</td>
-                       <td>268</td>
-                       <td>212</td>
-                       <td>342</td>
-                       <td>256</td>
-                   </tr>
-                   <tr>
-                       <td>k</td>
-                       <td>268</td>
-                       <td>212</td>
-                       <td>342</td>
-                       <td>256</td>
-                   </tr>
-                   <tr>
-                       <td>k</td>
-                       <td>268</td>
-                       <td>212</td>
-                       <td>342</td>
-                       <td>256</td>
-                   </tr>
-               </tbody>
-           </table>
+            <table class="table table-kingdargen">
+                <thead>
+                <tr>
+                    <th>test1</th>
+                    <th>test2</th>
+                    <th>test3</th>
+                    <th>test4</th>
+                    <th>test5</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>a</td>
+                    <td>268</td>
+                    <td>212</td>
+                    <td>342</td>
+                    <td>256</td>
+                </tr>
+                <tr>
+                    <td>b</td>
+                    <td>268</td>
+                    <td>212</td>
+                    <td>342</td>
+                    <td>256</td>
+                </tr>
+                <tr>
+                    <td>c</td>
+                    <td>268</td>
+                    <td>212</td>
+                    <td>342</td>
+                    <td>256</td>
+                </tr>
+                <tr>
+                    <td>d</td>
+                    <td>268</td>
+                    <td>212</td>
+                    <td>342</td>
+                    <td>256</td>
+                </tr>
+                <tr>
+                    <td>e</td>
+                    <td>268</td>
+                    <td>212</td>
+                    <td>342</td>
+                    <td>256</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>268</td>
+                    <td>212</td>
+                    <td>342</td>
+                    <td>256</td>
+                </tr>
+                <tr>
+                    <td>g</td>
+                    <td>268</td>
+                    <td>212</td>
+                    <td>342</td>
+                    <td>256</td>
+                </tr>
+                <tr>
+                    <td>h</td>
+                    <td>268</td>
+                    <td>212</td>
+                    <td>342</td>
+                    <td>256</td>
+                </tr>
+                <tr>
+                    <td>i</td>
+                    <td>268</td>
+                    <td>212</td>
+                    <td>342</td>
+                    <td>256</td>
+                </tr>
+                <tr>
+                    <td>k</td>
+                    <td>268</td>
+                    <td>212</td>
+                    <td>342</td>
+                    <td>256</td>
+                </tr>
+                <tr>
+                    <td>k</td>
+                    <td>268</td>
+                    <td>212</td>
+                    <td>342</td>
+                    <td>256</td>
+                </tr>
+                <tr>
+                    <td>k</td>
+                    <td>268</td>
+                    <td>212</td>
+                    <td>342</td>
+                    <td>256</td>
+                </tr>
+                <tr>
+                    <td>k</td>
+                    <td>268</td>
+                    <td>212</td>
+                    <td>342</td>
+                    <td>256</td>
+                </tr>
+                </tbody>
+            </table>
             <span class="top-left border-span"></span>
             <span class="top-right border-span"></span>
             <span class="bottom-left border-span"></span>
@@ -249,7 +269,7 @@
         </div>
         <div class="border-container">
             <div class="name-title">条形图</div>
-          <div id="juniorservice"></div>
+            <div id="juniorservice"></div>
             <span class="top-left border-span"></span>
             <span class="top-right border-span"></span>
             <span class="bottom-left border-span"></span>
@@ -267,8 +287,8 @@
 </div>
 
 
-	<!---end-->	
-	
+<!---end-->
+
 </body>
 <!--<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>-->
 <!--<script type="text/javascript" src="https://cdn.staticfile.org/echarts/4.7.0/echarts.min.js"></script>-->
